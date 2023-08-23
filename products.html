@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>All products - Groupe Heri</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <input type="text" name="" id="search-item" placeholder="Search products" onkeyup="search()" class="form">
+            <button type="submit">Search</button>
+        </form>
+        <header>
+            <h1>ALL PRODUCTS</h1>
+            <div class="shopping">
+                <img src="img/shopping-bag-svgrepo-com.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
+<!------- footer-------->
+<footer class="container-5">
+    <div class="col">
+        <h3>Contact</h3>
+        <P><strong>Address: </strong> Goma, Route Sake En Diagonale De La Station IBB</P>
+        <P><strong>Phone:</strong> +243990098680 / +243978270465</P>
+        <P><strong>Hours:</strong> 8:00 - 17:30 , Mon - Sat</P>
+        <div class="follow">
+            <h3>Follow Us</h3>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100091833204697"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/groupeheri/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h3>About</h3>
+        <a href="about.html">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="terms and condition.html">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+        <h3>My Account</h3>
+        <a href="account.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="index.html">home</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col install">
+        <h3>Install App</h3>
+        <p>From App Store or Google Play</p>
+        <div class="row5">
+            <img src="img/app store 2.jpg" alt="">
+            <img src="img/google play.png" alt="">
+        </div>
+        <P>Secured Payement Gateways</P>
+        <img src="img/pay/ppppp.png" alt="">
+    </div>
+    <p class="Copyright" >Copyright 2023 - Dhouznt</p>
+</footer>
+<!----------js for toggle menu---------> 
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+   function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+   }
+</script>
+

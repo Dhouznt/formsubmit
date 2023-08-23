@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.navbar a{
+    color: #000;
+    padding-right: 4px;
+    cursor: pointer;
+}
+.navbar a:hover{
+    color: #ff523b;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+/*------forgot pass-----*/
+
+.form-container1 {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container1 .form-wrap {
+    background: #fff;
+    width: 40%;
+    padding: 15px 20px;
+}
+.form-container1 .form-wrap h2{
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 19px;
+    color: #ff523b;
+}
+.form-container1 .form-wrap .form-box{
+    margin: 0px 0px 15px;
+}
+
+.form-container1 .form-wrap .form-box input{
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 3px solid #353535;
+    width: 100%;
+}
+.form-container1 .form-wrap .form-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container1 .form-wrap .form-submit input{
+    padding: 4px 0px;
+    border: none;
+    border-radius: 2px;
+    background: #ff523b;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Groupe Heri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="container9">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/ghnew.png" width="70px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product2.html">products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container18">
+        <div class="right-box">
+            <div class="main-image-box">
+                <img src="p/product8.jpg" id="mainImage" class="main-image">
+            </div>
+            <div class="small-images">
+                <div class="image-box"><img src="p/sup1.JPG" class="image"></div>
+                <div class="image-box"><img src="p/sup22.webp" class="image"></div>
+                <div class="image-box"><img src="p/sup3.JPG" class="image"></div>
+                <div class="image-box"><img src="p/product8.jpg" class="image"></div>
+            </div>
+        </div>
+        <div class="details-box">
+            <h1>Here is the single product Name and Information</h1>
+            <br>
+            <h3>Availablity (In stock)</h3>
+            <br>
+            <h2>$ 6.5</h2>
+            <br>
+            <table cellspacing="0" class="inputs">
+                <tr>
+                    <td>Quantity</td>
+                    <td align="right"><input type=*number* id="first"></td>
+                </tr>
+                <tr>
+                    <td>Sub Total</td>
+                    <td align="right"><input type=*number* id="second"></td>
+                </tr>
+                <tr>
+                    <td>Sales Tax 16%</td>
+                    <td align="right"><input type=*number* id="third"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td align="right"><input type=*number* id="fourth"></td>
+                </tr>
+            </table>
+            <br>
+            <h3>Specifications</h3>
+            <p>Martin Boots Men's tooling all match high top</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    <script>
+        let mainImage = document.getElementById("mainImage");
+        let smallImage = document.getElementsByClassName("image");
+        smallImage[0].onclick = ()=>{
+            mainImage.src = smallImage[0].src;
+        }
+        smallImage[1].onclick = ()=>{
+            mainImage.src = smallImage[1].src;
+        }
+        smallImage[2].onclick = ()=>{
+            mainImage.src = smallImage[2].src;
+        } 
+        smallImage[3].onclick = ()=>{
+            mainImage.src = smallImage[3].src;
+        } 
+        function cart(){
+            var a,b,c,d;
+            a=document.getElementById("first").value;
+            b=a*6.5;
+            document.getElementById("second").value=b;
+            c=(b*16)/100;
+            document.getElementById("third").value=c;
+            d=b+c;
+            document.getElementById("fourth").value=d;
+        }
+        let ans= document.getElementById("first");
+        ans.addEventListener('keyup',cart);
+    </script>    
+</body>
+</html>
